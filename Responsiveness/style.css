@@ -1,90 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    font-family: "Roboto", sans-serif;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 1em 2em;
-    align-items: center;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
-header ul{
-    display: flex;
-    list-style-type: none;
-    gap: 1em;
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+  align-items: center;
 }
 
-header ul li a{
-    color: black;
-    text-decoration: none;
+header ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1em;
 }
 
-header span{
-    font-family: "Bitcount Grid Double", system-ui;
-    font-size: 26px;
+header ul li a {
+  color: black;
+  text-decoration: none;
 }
 
-
-header div button{
-    background-color: transparent;
-    padding: 8px 32px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background 1s ease-in-out;
+header span {
+  font-family: "Bitcount Grid Double", system-ui;
+  font-size: 26px;
 }
 
-header div button:hover{
-    background-color: rgb(220, 219, 219);
+header div button {
+  background-color: transparent;
+  padding: 8px 32px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 1s ease-in-out;
 }
 
-@media only screen and (max-width:570px){
-    header div button{
-        display: none;
-    }
+header div button:hover {
+  background-color: rgb(220, 219, 219);
 }
 
-@media only screen and (max-width:425px){
-    header{
-        flex-direction: column;
-        gap: 2em;
-    }
+@media only screen and (max-width: 570px) {
+  header div button {
+    display: none;
+  }
 }
 
-
-main{
-    padding-left: 32px;
-    padding-right: 32px;
-}
-main .hero-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
+@media only screen and (max-width: 425px) {
+  header {
+    flex-direction: column;
+    gap: 2em;
+  }
 }
 
-.right .shape{
-    width: 350px;
-    height: 350px;
-    background-color: aqua;
+main {
+  padding-left: 32px;
+  padding-right: 32px;
 }
-.social-icons{
-    margin-top: 1em;
+main .hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.right .shape {
+  width: 350px;
+  height: 350px;
+  background-color: aqua;
+}
+.social-icons {
+  margin-top: 1em;
 }
 .social-icons ul {
-    display: flex;
-    list-style: none;
-    gap: 1em;
+  display: flex;
+  list-style: none;
+  gap: 1em;
 }
 
-.social-icons ul li a{
-    font-size: 32px;
-    color: gray;
+.social-icons ul li a {
+  font-size: 32px;
+  color: gray;
+}
+
+#service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+}
+
+.services-container {
+  display: flex;
+  margin-top: 1em;
+  gap: 1em;
+  margin-bottom: 3em;
+}
+
+.service-card{
+    background-color: rgb(220, 219, 219);
+    padding: 1em 2em;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.service-card i{
+    font-size: 40px;
 }
